@@ -17,7 +17,7 @@ sudo -i
 yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
-echo "hai all this is my app created by terraform infrastructurte by manindra server-1" > /var/www/html/index.html
+echo "hai all this is my app created by terraform infrastructurte by mani server-1" > /var/www/html/index.html
 EOF
   tags = {
     Name = "server-1"
@@ -36,7 +36,7 @@ sudo -i
 yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
-echo "hai all this is my website created by terraform infrastructurte by manindra server-2" > /var/www/html/index.html
+echo "hai all this is my website created by terraform infrastructurte by mani server-2" > /var/www/html/index.html
 EOF
   tags = {
     Name = "server-2"
@@ -68,7 +68,7 @@ resource "aws_security_group" "three" {
 }
 
 resource "aws_s3_bucket" "four" {
-  bucket = "manindra012"
+  bucket = "manin012"
 }
 
 resource "aws_iam_user" "five" {
